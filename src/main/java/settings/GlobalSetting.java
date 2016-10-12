@@ -12,9 +12,9 @@ import java.util.Map;
 public class GlobalSetting extends ProtoSetting{
     public GlobalSetting(String InputFile_Path){
         super();
-        setProperty(INPUTFILE_PATH,InputFile_Path);
-        setProperty(MS_DATABASEFILE_PATH,"src/main/resources/e_MS_DB");
-        setProperty(MS_TOLERANCE_PPM,"10");
+        setProperty(super.INPUTFILE_PATH,InputFile_Path);
+        setProperty(super.MS_DATABASEFILE_PATH,"src/main/resources/e_MS_DB");
+        setProperty(super.MS_TOLERANCE_PPM,"10");
     }
 
     public <T> void setProperty(String Property_Name, T Property_Value){

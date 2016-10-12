@@ -8,9 +8,9 @@ import java.util.*;
 
 public class ProtoSetting {
     protected Map<String, String> propByUser;
-    public final String INPUTFILE_PATH;
-    public final String MS_DATABASEFILE_PATH;
-    public final String MS_TOLERANCE_PPM;
+    protected final String INPUTFILE_PATH;
+    protected final String MS_DATABASEFILE_PATH;
+    protected final String MS_TOLERANCE_PPM;
 
     protected ProtoSetting(){
         INPUTFILE_PATH = "InputFile_Path";

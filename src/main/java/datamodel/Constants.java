@@ -9,6 +9,8 @@ package datamodel;
  * adduct_names---AdductType    //http://fiehnlab.ucdavis.edu/staff/kind/Metabolomics/MS-Adduct-Calculator/
  */
 
+import datamodel.adduct.AdductType;
+
 import java.util.*;
 
 public class Constants {

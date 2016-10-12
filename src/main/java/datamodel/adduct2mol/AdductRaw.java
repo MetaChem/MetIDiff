@@ -1,24 +1,26 @@
-package datamodel;
+package datamodel.adduct2mol;
 
 /**
  * Created by lmn on 10/10/16.
  */
 
+import datamodel.adduct.AdductType;
+
 import static datamodel.Constants.ADDUCTMAP;
 import static datamodel.Constants.ELECTRON_MASS;
 
-public class Adduct {
-    private double mz;
-    private String adductType;
-    private double neuralMass;
+public class AdductRaw {
+    protected double mz;
+    protected String adductType;
+    protected double neuralMass;
 
-    public Adduct(double mz, String adductType) {
+    public AdductRaw(double mz, String adductType) {
         this.mz = mz;
         this.adductType = adductType;
         this.neuralMass = mz2neu(mz,adductType);
     }
 
-    public Adduct(String adductType, double neuralMass){
+    public AdductRaw(String adductType, double neuralMass){
         this.adductType = adductType;
         this.neuralMass = neuralMass;
         this.mz = neu2mz(neuralMass,adductType);
@@ -38,16 +40,16 @@ public class Adduct {
         return mz;
     }
 
-    public double getMz() {
-        return mz;
-    }
+    public double getMZ() {return mz;}
 
-    public double getNeuralMass() {
-        return neuralMass;
-    }
+    public double getNeuralMass() {return neuralMass;}
 
-    public String getAdductType() {
-        return adductType;
+    public String getAdductType() {return adductType;}
+
+    public void copyAdductRaw(AdductRaw adductRaw){
+        this.mz = adductRaw.getMZ();
+        this.adductType = adductRaw.getAdductType();
+        this.neuralMass = adductRaw.getNeuralMass();
     }
 
     @Override

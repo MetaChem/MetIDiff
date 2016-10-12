@@ -1,4 +1,4 @@
-package datamodel;
+package datamodel.adduct;
 
 /**
  * Created by lmn on 10/10/16.
@@ -9,19 +9,19 @@ public class AdductType {
     private int charge;
     private int molNum;
 
-    AdductType(String name, double mass){
+    public AdductType(String name, double mass){
         this.name = name;
         this.mass = mass;
         this.charge = 0;
         this.molNum = 1;
     }
-    AdductType(String name, double mass, int charge){
+    public AdductType(String name, double mass, int charge){
         this.name = name;
         this.mass = mass;
         this.charge = charge;
         this.molNum = 1;
     }
-    AdductType(String name, double mass, int charge, int molNum){
+    public AdductType(String name, double mass, int charge, int molNum){
         this.name = name;
         this.mass = mass;
         this.charge = charge;
