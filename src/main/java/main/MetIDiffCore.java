@@ -58,5 +58,8 @@ public class MetIDiffCore {
         MolMS1ID molMS1ID = new MolMS1ID(345.56, "[M+H]",ms1ids);
         System.out.println(molMS1ID);
 
+        test testa = new test();
+        testa.setAddSSS("Hello Java and Groovy mix");
+        System.out.println(testa.getAddSSS());
     }
 }
