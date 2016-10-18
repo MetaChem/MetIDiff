@@ -57,5 +57,6 @@ public class MetIDiffCore {
         ms1ids.add(idResultMS1b);
         MolMS1ID molMS1ID = new MolMS1ID(345.56, "[M+H]",ms1ids);
         System.out.println(molMS1ID);
+
     }
 }
